@@ -1,0 +1,26 @@
+body{
+	font-family:Verdana
+}
+
+.s3dbLogin{
+	color:navy;
+	font-size:small;
+	font-style:italic;
+	background-color:yellow;
+}
+
+.login{
+	color:blue;
+	font-size:small;
+	font-style:italic;
+}
+.msg{
+	color:green;
+	font-size:x-small;
+	generic-family:monospace;
+}
+
+.auditInfo{
+	color:#347235;
+	font-weight:bold;
+}
