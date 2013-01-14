@@ -2,7 +2,7 @@
 	<head>
 
 		<link rel="stylesheet" type="text/css" href="UABaudit.css">
-
+        <link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap.css">
 		
 	</head>
 	<body>
@@ -15,19 +15,66 @@
 			<div id="msg" class="msg">msg</div>
 		</td></tr>
 	</table>
-
+    <div class="container">
+      <h3 class="form_title">
+        <div style="text-align: center;">
+          Form A
+        </div>
+      </h3>
+      <form>
+        <div class="control-group profile">
+          <label for="textinput1">
+            <b>
+            </b>
+            <b>
+              Facility
+            </b>
+            <b>
+              :
+            </b>
+            <br>
+          </label>
+          <input name="textinput1" type="">
+        </div>
+      </form>
+      <div class="control-group profile">
+        <label for="textinput2">
+          <b>
+            Audit &nbsp;Date :
+          </b>
+        </label>
+        <input name="textinput2" type="">
+      </div>
+      <div class="control-group profile">
+        <label for="textinput3">
+          <b>
+            Auditor :
+          </b>
+        </label>
+        <input name="textinput3" type="">
+      </div>
+      <div class="control-group">
+        <label for="textinput4">
+          <b>
+            Med. Record Number :
+          </b>
+        </label>
+        <input name="textinput4" type="">
+      </div>
+    </div>
+    
     <script src="./javascripts/slickgrid/jquery-1.7.min.js"></script>
     <script src="./javascripts/slickgrid/jquery.event.drag-2.0.min.js"></script>
      
-    <script src="https://dl.dropbox.com/s/cqrb3w67dbb716y/jmat.js?dl=1"></script>
+    <script src="jmat.js"></script>
 	<script src="https://raw.github.com/agrueneberg/S3DB-Connectivity/master/s3db-connectivity.js"></script>
 	<script src="./UABaudit.js"></script>
+
 	
 
     <script src="./javascripts/slickgrid/slick.core.js"></script>
-    <script src="./javascripts/slickgrid/slick.grid.js"></script>
-    
-
-
+    <script src="./javascripts/slickgrid/slick.grid.js"></script>  
+    <script src="./javascripts/lib/bootstrap.js"></script>
+    <script src="./onlineform.js"></script>
 </body>
 </html>

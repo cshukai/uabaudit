@@ -6,7 +6,7 @@ console.log('UAB Audit');
 uabAudit={
 	start:function(){
 		uabAudit.msg('logging in ...','red');
-		jmat.s3db.UI.login('https://uab.s3db.org/s3db',function(){
+		jmat.s3db.UI.login('http://204.232.200.16/uabs3db',function(){
 			jQuery('#login').html(jmat.s3db.info.uid.account_uname+' ('+jmat.s3db.info.uid.email+')'); // login info
 			uabAudit.msg('logging in ... successful','green');
 		});
