@@ -5,11 +5,11 @@ document.body.insertBefore(loginDiv,formDiv);
 
 
 
-$('<div id="questionsDiv"></div>').insertAfter('#form_title');
+$('<div id="questionsDiv" style="height: 500px; overflow:scroll"></div>').insertAfter('#form_title');
 
 var columns = [
     {
-        name: "Questions",
+        name: "question",
         field: "question",
         id: "question",  // In most cases field and id will have the same value.
         sortable: true
@@ -51,29 +51,32 @@ var columns = [
 var rows = [
     {
         question: "A:B",
-        Yes: "",
-        No:"",
-        NA:"",
-        Comments:""
+        Yes: "test",
+        No:"test",
+        NA:"test",
+        Comments:"test"
 
     }, 
     {
-        question: "C",
-        Yes: "",
-        No:"",
-        NA:"",
-        Comments:""
+        question: "C:D",
+        Yes: "est",
+        No:"est",
+        NA:"est",
+        Comments:"est"
     }
 ];
 
+
+// clean
 var options={
 	enableColumnReorder:false,
-    editable:true,
-    forceFitColumns:true
+	enableCellNavigation: true,
+     editable:true,
+     forceFitColumns:true
 };
 var slickgrid = new Slick.Grid("#questionsDiv", rows, columns,options);
 slickgrid.setData(rows); // A different, empty or sorted array.
-//slickgrid.updateRowCount();
+slickgrid.updateRowCount();
 slickgrid.render();
 
 
@@ -86,8 +89,8 @@ formSelector.appendChild(option);
 
 
 var option=document.createElement('option');
-option.value='A';
-option.textContent='A';
+option.value='C';
+option.textContent='C';
 formSelector.appendChild(option);
 
 
