@@ -66,8 +66,6 @@ var rows = [
     }
 ];
 
-
-// clean
 var options={
 	enableColumnReorder:false,
 	enableCellNavigation: true,
@@ -75,9 +73,9 @@ var options={
      forceFitColumns:true
 };
 var slickgrid = new Slick.Grid("#questionsDiv", rows, columns,options);
-slickgrid.setData(rows); // A different, empty or sorted array.
-slickgrid.updateRowCount();
-slickgrid.render();
+// slickgrid.setData(rows); // A different, empty or sorted array.
+// slickgrid.updateRowCount();
+// slickgrid.render();
 
 
 var formSelector=document.createElement('select');
