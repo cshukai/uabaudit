@@ -76,9 +76,28 @@ var slickgrid = new Slick.Grid("#questionsDiv", rows, columns,options);
 // slickgrid.setData(rows); // A different, empty or sorted array.
 // slickgrid.updateRowCount();
 // slickgrid.render();
+  slickgrid.onSort.subscribe(function(e, args){ // args: sort information. 
 
+        var field = args.columns[0].field;
+
+        rows.sort(function(a, b){
+            var result = 
+                a[field] > b[field] ? 1 :
+                a[field] < b[field] ? -1 :
+                0
+            ; 
+
+            return args.sortAsc ? result : -result;
+
+        });
+
+        slickgrid.setData(rows);
+        slickgrid.updateRowCount();
+        slickgrid.render();         
+    });
 
 var formSelector=document.createElement('select');
+formSelector.id='formSelector';
 
 var option=document.createElement('option');
 option.value='A';
