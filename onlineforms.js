@@ -12,14 +12,16 @@ var columns = [
         name: "question",
         field: "question",
         id: "question",  // In most cases field and id will have the same value.
-        sortable: true
+        // sortable: true,
+        editor: Slick.Editors.Text
         
     }, 
     {
         name: "Yes",
         field: "Yes", // This and the following column read the same data, but can present it in a different way.
         id: "Yes",
-        sortable: true
+        // sortable: true,
+        editor: Slick.Editors.Text
        
     },
 
@@ -27,7 +29,8 @@ var columns = [
         name: "No",
         field: "No", // This and the following column read the same data, but can present it in a different way.
         id: "No",
-        sortable: true
+        // sortable: true,
+        editor: Slick.Editors.Text
         
     },
 
@@ -35,7 +38,8 @@ var columns = [
         name: "NA",
         field: "NA", // This and the following column read the same data, but can present it in a different way.
         id: "NA",
-        sortable: true
+        // sortable: true,
+        editor: Slick.Editors.Text
       
     },
 
@@ -43,7 +47,8 @@ var columns = [
         name: "Comments",
         field: "Comments", // This and the following column read the same data, but can present it in a different way.
         id: "Comments",
-        sortable: true
+        // sortable: true,
+        editor: Slick.Editors.Text
         
     }    
 ];
@@ -76,25 +81,26 @@ var slickgrid = new Slick.Grid("#questionsDiv", rows, columns,options);
 // slickgrid.setData(rows); // A different, empty or sorted array.
 // slickgrid.updateRowCount();
 // slickgrid.render();
-  slickgrid.onSort.subscribe(function(e, args){ // args: sort information. 
 
-        var field = args.columns[0].field;
+  // slickgrid.onSort.subscribe(function(e, args){ // args: sort information. 
 
-        rows.sort(function(a, b){
-            var result = 
-                a[field] > b[field] ? 1 :
-                a[field] < b[field] ? -1 :
-                0
-            ; 
+  //       var field = args.columns[0].field;
 
-            return args.sortAsc ? result : -result;
+  //       rows.sort(function(a, b){
+  //           var result = 
+  //               a[field] > b[field] ? 1 :
+  //               a[field] < b[field] ? -1 :
+  //               0
+  //           ; 
 
-        });
+  //           return args.sortAsc ? result : -result;
 
-        slickgrid.setData(rows);
-        slickgrid.updateRowCount();
-        slickgrid.render();         
-    });
+  //       });
+
+  //       slickgrid.setData(rows);
+  //       slickgrid.updateRowCount();
+  //       slickgrid.render();         
+  //   });
 
 var formSelector=document.createElement('select');
 formSelector.id='formSelector';
