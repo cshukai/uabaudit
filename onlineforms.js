@@ -55,7 +55,7 @@ var columns = [
 
 var rows = [
     {
-        question: "A:B",
+        question: "E:F",
         Yes: "test",
         No:"test",
         NA:"test",
@@ -63,7 +63,7 @@ var rows = [
 
     }, 
     {
-        question: "C:D",
+        question: "G:H",
         Yes: "est",
         No:"est",
         NA:"est",
