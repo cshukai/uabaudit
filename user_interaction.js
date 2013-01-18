@@ -15,14 +15,14 @@ $(document).ready(function() {
         }, 
         {
             question: "C:D",
-            Yes: "est",
+            Yes:"est",
             No:"est",
             NA:"est",
             Comments:"est"
         }
         ];
 
-        slickgrid.setData(rows); // A different, empty or sorted array.
+        slickgrid.setData(rows);
         slickgrid.updateRowCount();
         slickgrid.render();
 
