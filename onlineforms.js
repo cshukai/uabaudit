@@ -1,4 +1,85 @@
+var rowSet={
+    'A':[
+        {
+            question: "A:B",
+            Yes: "",
+            No:"",
+            NA:"",
+            Comments:""
 
+        }, 
+        {
+            question: "C:D",
+            Yes:"",
+            No:"",
+            NA:"",
+            Comments:""
+        },
+
+         {
+            question: "A1:B1",
+            Yes:"",
+            No:"",
+            NA:"",
+            Comments:""
+        },
+        ],
+
+     'B':[
+        {
+            question: "E:F",
+            Yes: "",
+            No:"",
+            NA:"",
+            Comments:""
+
+        }, 
+        {
+            question: "G:H",
+            Yes:"",
+            No:"",
+            NA:"",
+            Comments:""
+        },
+      
+        {
+            question: "B1:C1",
+            Yes:"",
+            No:"",
+            NA:"",
+            Comments:""
+        }
+
+        ],
+
+       'C':[
+        {
+            question: "I",
+            Yes: "",
+            No:"",
+            NA:"",
+            Comments:""
+
+        }, 
+        {
+            question: "J",
+            Yes:"",
+            No:"",
+            NA:"",
+            Comments:""
+        },
+      
+        {
+            question: "K",
+            Yes:"",
+            No:"",
+            NA:"",
+            Comments:""
+        }
+
+        ],
+
+};
 var loginDiv=document.getElementById("s3dbLogin");
 var formDiv=document.getElementsByClassName('container')[0]
 document.body.insertBefore(loginDiv,formDiv);
@@ -55,7 +136,7 @@ var columns = [
 
 var rows = [
     {
-        question: "E",
+        question: "A:B",
         Yes: "",
         No:"",
         NA:"",
@@ -63,7 +144,7 @@ var rows = [
 
     }, 
     {
-        question: "F",
+        question: "C:D",
         Yes: "",
         No:"",
         NA:"",
@@ -71,19 +152,12 @@ var rows = [
     },
 
     {
-        question: "G",
+        question: "A1:B1",
         Yes: "",
         No:"",
         NA:"",
         Comments:""
 
-    }, 
-    {
-        question: "H",
-        Yes: "",
-        No:"",
-        NA:"",
-        Comments:""
     }
 ];
 
