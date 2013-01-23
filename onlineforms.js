@@ -55,7 +55,7 @@ var columns = [
 
 var rows = [
     {
-        question: "E:F",
+        question: "E",
         Yes: "",
         No:"",
         NA:"",
@@ -63,7 +63,23 @@ var rows = [
 
     }, 
     {
-        question: "G:H",
+        question: "F",
+        Yes: "",
+        No:"",
+        NA:"",
+        Comments:""
+    },
+
+    {
+        question: "G",
+        Yes: "",
+        No:"",
+        NA:"",
+        Comments:""
+
+    }, 
+    {
+        question: "H",
         Yes: "",
         No:"",
         NA:"",
@@ -77,7 +93,21 @@ var options={
      editable:true,
      forceFitColumns:true
 };
+
+
 var slickgrid = new Slick.Grid("#questionsDiv", rows, columns,options);
+
+
+slickgrid.setCellCssStyles("question_highlight", {
+   0: {
+        question: "question_highlight"
+       
+       },
+
+   2: {
+         question: "question_highlight"
+       }
+});
 // slickgrid.setData(rows); // A different, empty or sorted array.
 // slickgrid.updateRowCount();
 // slickgrid.render();
