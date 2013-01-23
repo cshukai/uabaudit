@@ -8,18 +8,18 @@ $(document).ready(function() {
         var rows = [
         {
             question: "A:B",
-            Yes: "test",
-            No:"test",
-            NA:"test",
-            Comments:"test"
+            Yes: "",
+            No:"",
+            NA:"",
+            Comments:""
 
         }, 
         {
             question: "C:D",
-            Yes:"est",
-            No:"est",
-            NA:"est",
-            Comments:"est"
+            Yes:"",
+            No:"",
+            NA:"",
+            Comments:""
         }
         ];
 

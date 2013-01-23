@@ -56,18 +56,18 @@ var columns = [
 var rows = [
     {
         question: "E:F",
-        Yes: "test",
-        No:"test",
-        NA:"test",
-        Comments:"test"
+        Yes: "",
+        No:"",
+        NA:"",
+        Comments:""
 
     }, 
     {
         question: "G:H",
-        Yes: "est",
-        No:"est",
-        NA:"est",
-        Comments:"est"
+        Yes: "",
+        No:"",
+        NA:"",
+        Comments:""
     }
 ];
 
