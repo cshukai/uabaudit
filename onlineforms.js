@@ -1,3 +1,4 @@
+// setting up the demo data
 var rowSet={
     'A':[
         {
@@ -41,6 +42,7 @@ var rowSet={
             NA:"",
             Comments:""
         },
+        .
       
         {
             question: "B1:C1",
@@ -103,7 +105,7 @@ var columns = [
         id: "Yes",
         // sortable: true,
         editor: Slick.Editors.Text
-       
+      
     },
 
     {
