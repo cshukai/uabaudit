@@ -9,24 +9,7 @@ $(document).ready(function() {
         var currentOptionValue=selectionBox.options[selectionBox.selectedIndex].value;
 
         var rows=rowSet[currentOptionValue];
-        // var rows = [
-        // {
-        //     question: "A:B",
-        //     Yes: "",
-        //     No:"",
-        //     NA:"",
-        //     Comments:""
-
-        // }, 
-        // {
-        //     question: "C:D",
-        //     Yes:"",
-        //     No:"",
-        //     NA:"",
-        //     Comments:""
-        // }
-        // ];
-
+    
         slickgrid.setData(rows);
         slickgrid.updateRowCount();
         slickgrid.render();
